@@ -42,17 +42,26 @@
   }
 
   a {
+    color: #bbb;
+
     +mobile() {
       padding: 5px 10px;
       border-bottom-color: white !important;
+    }
+
+    &:hover {
+      color: #fff;
+      border-bottom-color: #fff;
     }
   }
   .fa { margin-right: 0; }
 }
 
 .menu-item-active a {
-  border-bottom-color: $menu-link-hover-border !important;
-  color: $black-deep;
+  // border-bottom-color: $menu-link-hover-border !important;
+  // color: $black-deep;
+  border-bottom-color: #fff !important;
+  color: #fff !important;
 
   +mobile() {
     border-bottom-color: white !important;
